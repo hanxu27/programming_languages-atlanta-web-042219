@@ -5,8 +5,10 @@ def reformat_languages(languages)
   key = {}
   
   languages.each do |style, data|
+  arr = []  
+    
     data.each do |language, type|
-
+      
       key[language] = {type: type.values[0], style: style}
       binding.pry
     end
