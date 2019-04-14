@@ -9,7 +9,7 @@ def reformat_languages(languages)
       if key[language] == nil
         key[language] = {type: type.values[0], style: [style]}
       else
-        key[language][:style] << [style]
+        key[language][:style] << style
       end
     end
   end
