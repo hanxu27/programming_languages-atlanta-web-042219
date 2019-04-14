@@ -6,8 +6,10 @@ def reformat_languages(languages)
   
   languages.each do |style, data|
     data.each do |language, type|
-      
-      key[language] = {type: type.values[0], style: [style]}
+      if key[language] == nil
+        key[language] = {type: type.values[0], style: [style]}
+      else
+        key[language] = {key[language]
 
     end
   end
