@@ -8,8 +8,9 @@ def reformat_languages(languages)
     data.each do |language, type|
       
       key[language] = {type: type.values[0], style: [style]}
-      #binding.pry
+
     end
   end
+        binding.pry
   key
 end
