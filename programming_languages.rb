@@ -10,6 +10,7 @@ def reformat_languages(languages)
         key[language] = {type: type.values[0], style: [style]}
       else
         key[language] = {key[language][:style] << [style]
+      end
     end
   end
         binding.pry
