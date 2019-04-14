@@ -6,7 +6,7 @@ def reformat_languages(languages)
   
   languages.each do |type, data|
 
-    data.each_key do |type, style|
+    data.each do |type, style|
 binding.pry
     end
   end
